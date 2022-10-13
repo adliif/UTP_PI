@@ -52,7 +52,7 @@ if passku == 'unila':
 
 else:
     if passku.isupper():
-        print('perhatikan tanda kapital')
+        print('password menggunakan huruf kecil')
     else:
         print('password anda salah')
     
