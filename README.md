@@ -1,7 +1,7 @@
 # UTP_PI
 Source code project dompet digital bahasa pemrograman python 
 
-> Adli Fiqrullah   
+ > Adli Fiqrullah   
    NPM. 2117051075
  
  > Alkhadafi Saddam S     
