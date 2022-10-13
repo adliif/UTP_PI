@@ -1,7 +1,3 @@
-from ctypes import sizeof
-from operator import length_hint
-
-
 saldo = 10000000
 def pengurangan (transaksi):
     total = print ('SISA UANG ANDA ADALAH : ', saldo - transaksi)
