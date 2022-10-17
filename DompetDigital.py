@@ -1,12 +1,12 @@
-def pengurangan(transaksi):
-    total = print('Sisa uang Anda : Rp', saldo - transaksi)
-    return total
-
 listmenu = ["1. TOP UP GAME", "2. TAGIHAN RUMAH", "3. ISI PULSA"]
 listtopupgame = ["1. Mobile Legends", "2. PUBGM"]
 listtagihanrumah = ["1. PLN", "2. PDAM", "3. WIFI"]
 listisipulsa = ["1. Telkomsel", "2. XL"]
 saldo = 300000
+
+def pengurangan(transaksi):
+    total = print('Sisa uang Anda : Rp', saldo - transaksi)
+    return total
 
 print('SELAMAT DATANG DI APLIKASI DOMPET DIGITAL \n\n')
 passku = input('Silahkan masukkan password Anda untuk melanjutkan : ')
