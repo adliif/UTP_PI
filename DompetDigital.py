@@ -1,7 +1,8 @@
+import random
 listmenu = ["1. TOP UP GAME", "2. TAGIHAN RUMAH", "3. ISI PULSA"]
-listtopupgame = ["1. Mobile Legends", "2. PUBGM"]
-listtagihanrumah = ["1. PLN", "2. PDAM", "3. WIFI"]
-listisipulsa = ["1. Telkomsel", "2. XL"]
+listtopupgame = ["\n1. Mobile Legends", "2. PUBGM"]
+listtagihanrumah = ["\n1. PLN", "2. PDAM", "3. WIFI"]
+listisipulsa = ["\n1. Telkomsel", "2. XL"]
 saldo = 300000
 
 def pengurangan(transaksi):
@@ -18,7 +19,7 @@ if passku == 'unila':
         for i in range (0, len(listmenu)):
             print(listmenu[i])
 
-        pilih = int(input("Silahkan pilih menu yang tersedia (WAJIB ANGKA!) : "))
+        pilih = int(input("\nSilahkan pilih menu yang tersedia (WAJIB ANGKA!) : "))
         pilih != 1 or 2 or 3
      
         if pilih == 1:
@@ -26,13 +27,19 @@ if passku == 'unila':
                 for i in range (0, len(listtopupgame)):
                     print(listtopupgame[i])
         
-                pilih1 = int(input("Silahkan pilih menu yang tersedia (WAJIB ANGKA!) : "))
+                pilih1 = int(input("\nSilahkan pilih menu yang tersedia (WAJIB ANGKA!) : "))
                 pilih1 != 1 or 2
 
                 if pilih1 == 1:
-                    pilihtopup = int(input("SILAHKAN MASUKAN JUMLAH UANG YG INGIN ANDA GUNAKAN : \n(WAJIB ANGKA!)\nJAWAB : "))
+                    pilihtopup = int(input("Silahkan masukan jumlah diamond yang ingin anda dapatkan : \n(WAJIB ANGKA!)\n\nJAWAB : "))
+                    pilihtopup = pilihtopup*1000
+                    print('\nTotal harga diamond yang anda keluarkan adalah : Rp.', pilihtopup)
+                    pengurangan(pilihtopup)
                 elif pilih1 == 2:
-                    pilihtopup = int(input("SILAHKAN MASUKAN JUMLAH UANG YG INGIN ANDA GUNAKAN : \n(WAJIB ANGKA!)\nJAWAB : "))
+                    pilihtopup = int(input("Silahkan masukan jumlah diamond yg ingin anda dapatkan : \n(WAJIB ANGKA!)\n\nJAWAB : "))                 
+                    pilihtopup = pilihtopup*2000
+                    print('\nTotal harga diamond yang anda keluarkan adalah : Rp.', pilihtopup)
+                    pengurangan(pilihtopup)
                 else:
                     print('Maaf pilihan menu tidak tersedia')               
             except (ValueError, TypeError):
@@ -43,17 +50,20 @@ if passku == 'unila':
                 for i in range (0, len(listtagihanrumah)):
                     print(listtagihanrumah[i])
         
-                pilih2 = int(input("Silahkan pilih menu yang tersedia (WAJIB ANGKA!) : "))
+                pilih2 = int(input("\nSilahkan pilih menu yang tersedia (WAJIB ANGKA!) : "))
                 pilih2 != 1 or 2 or 3
 
                 if pilih2 == 1:
                     noPLN = int(input('Masukkan nomor pelanggan : '))
+                    print('\nnomor token anda adalah : ',random.randint(1000,9999))
                     pengurangan(50000)
                 elif pilih2 == 2:
                     noPDAM = int(input('Masukkan nomor pelanggan : '))
+                    print('\nnomor token anda adalah : ',random.randint(1000,9999))
                     pengurangan(50000)
                 elif pilih2 == 3:
                     noWIFI = int(input('Masukkan nomor pelanggan : '))
+                    print('\nnomor token anda adalah : ',random.randint(1000,9999))
                     pengurangan(150000)
                 else:
                     print('Maaf pilihan menu tidak tersedia')  
@@ -65,18 +75,18 @@ if passku == 'unila':
                 for i in range (0, len(listisipulsa)):
                     print(listisipulsa[i])
         
-                pilih3 = int(input('Silahkan pilih menu yang tersedia (WAJIB ANGKA!) : '))
+                pilih3 = int(input('\nSilahkan pilih menu yang tersedia (WAJIB ANGKA!) : '))
                 pilih3 != 1 or 2
 
                 if pilih3 == 1:
-                    nomorHp = int(input('Masukkan nomor Hp\t: '))
+                    nomorHp = int(input('Masukkan nomor Hp\t\t: '))
                     nominal = int(input('Masukkan nominal isi pulsa\t: '))
                     if nominal < 10000:
                         print('Nominal harus minimal Rp10.000')
                     else:
                         pengurangan(nominal)
                 elif pilih3 == 2:
-                    nomorHp = int(input('Masukkan nomor Hp\t: '))
+                    nomorHp = int(input('Masukkan nomor Hp\t\t: '))
                     nominal = int(input('Masukkan nominal isi pulsa\t: '))
                     if nominal < 5000:
                         print('Nominal harus minimal Rp5.000')
