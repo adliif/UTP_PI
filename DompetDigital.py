@@ -19,6 +19,7 @@ if passku == 'unila':
     print('Password anda benar\n')
 
     try :
+        print(\t\t\t\t\t"Saldo anda :", saldo)
         for i in range (0, len(listmenu)):
             print(listmenu[i])
 
