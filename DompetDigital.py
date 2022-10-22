@@ -36,13 +36,13 @@ if passku == 'unila':
 
                 if pilih1 == 1:
                     os.system('cls')
-                    pilihtopup = int(input("Silahkan masukan jumlah diamond yang ingin anda dapatkan : \n(WAJIB ANGKA!)\n\nJAWAB : "))
+                    pilihtopup = int(input("Silahkan masukan jumlah diamond yang ingin anda dapatkan (WAJIB ANGKA!) : "))
                     pilihtopup = pilihtopup*1000
                     print('\nTotal harga diamond yang anda keluarkan adalah : Rp.', pilihtopup)
                     pengurangan(pilihtopup)
                 elif pilih1 == 2:
                     os.system('cls')
-                    pilihtopup = int(input("Silahkan masukan jumlah diamond yg ingin anda dapatkan : \n(WAJIB ANGKA!)\n\nJAWAB : "))                 
+                    pilihtopup = int(input("Silahkan masukan jumlah diamond yg ingin anda dapatkan (WAJIB ANGKA!) : "))                 
                     pilihtopup = pilihtopup*2000
                     print('\nTotal harga diamond yang anda keluarkan adalah : Rp.', pilihtopup)
                     pengurangan(pilihtopup)
