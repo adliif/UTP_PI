@@ -53,7 +53,7 @@ if passku == 'unila':
 
         elif pilih == 2:
             try :
-                os.system('cls)
+                os.system('cls')
                 for i in range (0, len(listtagihanrumah)):
                     print(listtagihanrumah[i])
         
