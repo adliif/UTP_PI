@@ -18,7 +18,6 @@ passku = input('Silahkan masukkan password Anda untuk melanjutkan : ')
 if passku == 'unila':
     print('Password anda benar\n')
 
-    
     try :
         os.system('cls')
         print('SELAMAT DATANG DI APLIKASI DOMPET DIGITAL UNILA\n\n')
