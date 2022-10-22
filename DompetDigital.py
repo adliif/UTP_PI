@@ -12,14 +12,16 @@ def pengurangan(transaksi):
     return total
 
 os.system('cls')
-print('SELAMAT DATANG DI APLIKASI DOMPET DIGITAL \n\n')
+print('SELAMAT DATANG DI APLIKASI DOMPET DIGITAL UNILA\n\n')
 passku = input('Silahkan masukkan password Anda untuk melanjutkan : ')
 
 if passku == 'unila':
     print('Password anda benar\n')
 
     try :
-        print("\t\t\t\t\tSaldo anda :", saldo)
+        os.system('cls')
+        print('SELAMAT DATANG DI APLIKASI DOMPET DIGITAL UNILA\n\n')
+        print("\t\t\t\tSaldo anda :", saldo)
         for i in range (0, len(listmenu)):
             print(listmenu[i])
 
